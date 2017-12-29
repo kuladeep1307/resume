@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Global Styles */
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+}
+h1, h2{
+font-family: 'Comfortaa', cursive;
+font-weight: 400;
+}
+h1{
+  font-size: 60px;
+  margin: 0;
+}
+h2{
+  font-size: 40px;
+  margin-top: 0;
+}
+h3{
+  margin: 0;
+}
+a{
+  color: #648A90;
+}
+a:hover{
+  text-decoration: none;
+}
+.container{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+/* Applied in Media Queries
+.col-narrow{
+  width: 30%;
+  float: left;
+}
+.col-wide{
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+}
+*/
+.upperclass{
+  text-transform: uppercase;
+}
+.button{
+  text-decoration: none;
+  background: #648A90;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header & Footer */
+header, footer{
+  background: #D6F6DD;
+  color: #9C6164;
+}
+
+/* Header */
+header{
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2{
+  color: purple;
+}
+.image{
+  border-radius: 50%;
+}
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Footer */
+footer{
+  text-align: center;
+}
+.contact a {
+  padding: 10px;
+  display: inline-block;
+}
+/* Navigation Bar */
+nav{
+  text-align: center;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav a:hover{
+  background-color: #D6F6DD;
+  color: #9C6164;
+}
+/* Work Experience */
+.work{
+  background: #EBD2B4;
+}
+h3 ~ p{
+  margin: 0;
+}
+.job-des p:first-of-type{
+  margin-top: 0;
+}
+.job-des{
+  margin-bottom: 25px;
+}
+/* Education */
+.education{
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)),
+  url(../images/chicago.jpg) no-repeat fixed;
+  background-size: cover;
+  color: white;
+}
+p + h3{
+  margin-top: 30px;
+}
+h4{
+  display: inline;
+}
+.course{
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+  .col-narrow{
+    width: 30%;
+    float: left;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px) {
+  header{
+    text-align: center;
+  }
+  .image{
+    width: 200px;
+  }
+}
